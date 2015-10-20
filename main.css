@@ -19,8 +19,9 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-h3 {
+h3, h4, li{
   text-align: center;
+  margin: auto;
 }
 
 hr{
@@ -39,10 +40,6 @@ ul {
   list-style-type: none;
 }
 
-li {
-  width: 50%;
-}
-
 footer {
 	bottom: 0px;-*
 	margin-bottom: 0px;
@@ -50,6 +47,8 @@ footer {
 /*============================================================================
 CLASS STYLES
 ============================================================================*/
+
+
 .container {
   width: auto;
   padding: 0 15px;
@@ -110,21 +109,11 @@ CLASS STYLES
 .project-header {
   background-color: rgba(52,73,94,0.6);
   width: 100%;
-  margin: 10px, 10px;  
+  margin: 100%;  
 }
 
 .section {
   height: 27em;
-}
-
-.skill-name {
-  margin-right: 10%;
-  text-align: left;
-}
-
-.skill-level {
-  clear: both;
-  float: right;
 }
 
 .social {
@@ -149,6 +138,11 @@ ID STYLES
   text-align: center;
 }
 
+#javascript {
+  height: 48px;
+  width: 48px;
+}
+
 #info {
   letter-spacing: 0.5px;
   line-height: 20px;
@@ -160,6 +154,13 @@ ID STYLES
   background-size: auto;
   background-repeat: no-repeat;
   height: 100%;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+#php {
+  height: 64px;
+  width: 64px;
 }
 
 #prefix {
@@ -193,6 +194,11 @@ ID STYLES
   background-color: #3498db;
 }
 
+#skills li{
+ margin-right: 4%;
+}
+
+
 #social_pointer {
   text-align: center;
   font-size: 2em;
@@ -208,6 +214,10 @@ ID STYLES
   color: #fff;
   background-color: #2ECC71;
 }
+
+#tools li{
+  margin-right: 4%;
+}
 /*============================================================================
 ANIMATION
 ============================================================================*/
@@ -221,3 +231,27 @@ ANIMATION
   color: gray;
   padding: 0 auto;
 }
+
+/*============================================================================
+MEDIA QUERIES
+============================================================================*/
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    [class*="container"] {
+      height: 50em;
+    }
+
+    #skills {
+      height: 57em;
+    }
+   
+    #tools {
+      height: 25em;
+    }
+    
+}
+
