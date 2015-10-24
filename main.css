@@ -40,6 +40,10 @@ ul {
   list-style-type: none;
 }
 
+li {
+  padding-right: 20px; 
+}
+
 footer {
 	bottom: 0px;-*
 	margin-bottom: 0px;
@@ -138,11 +142,6 @@ ID STYLES
   text-align: center;
 }
 
-#javascript {
-  height: 48px;
-  width: 48px;
-}
-
 #info {
   letter-spacing: 0.5px;
   line-height: 20px;
@@ -152,22 +151,15 @@ ID STYLES
   background: url("images/pagelanding.png");
   background-position: center;
   background-size: auto;
-  background-repeat: no-repeat;
   height: 100%;
   padding-top: 0%;
   margin-top: 0%;
-}
-
-#php {
-  height: 64px;
-  width: 64px;
 }
 
 #prefix {
   background: url("images/prefixmix.png");
   background-position: center;
   background-size: auto;
-  background-repeat: no-repeat;
   height: 100%;
 }
 
@@ -198,7 +190,6 @@ ID STYLES
  margin-right: 4%;
 }
 
-
 #social_pointer {
   text-align: center;
   font-size: 2em;
@@ -215,9 +206,6 @@ ID STYLES
   background-color: #2ECC71;
 }
 
-#tools li{
-  margin-right: 4%;
-}
 /*============================================================================
 ANIMATION
 ============================================================================*/
@@ -237,21 +225,30 @@ MEDIA QUERIES
 ============================================================================*/
 @media only screen and (max-width: 768px) {
     /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
+    /* These elements are sorted from top to bottom of the page*/
+    #about {
+      height: 45em;
     }
-
-    [class*="container"] {
-      height: 50em;
+    .info {
+      margin-top: 20px;
     }
-
+    /*skills styles for phones */ 
     #skills {
-      height: 57em;
+      height: 52em;
     }
-   
+    .html, .javascript, .php{
+      margin-top: 45px;
+    }
+    /*tools styles for phones*/
     #tools {
       height: 25em;
     }
-    
+    #tools li{
+      margin-right: 2%;
+    }
+    /*social styles for phones*/
+    .social {
+      margin-top: 45em;
+    }
 }
 
