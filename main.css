@@ -148,7 +148,7 @@ ID STYLES
 }
 
 #landing {
-  background: url("images/pagelanding.png");
+  background: url("images/pagelanding.PNG");
   background-position: center;
   background-size: auto;
   height: 100%;
@@ -157,7 +157,7 @@ ID STYLES
 }
 
 #prefix {
-  background: url("images/prefixmix.png");
+  background: url("images/prefixmix.PNG");
   background-position: center;
   background-size: auto;
   height: 100%;
