@@ -86,7 +86,7 @@ CLASS STYLES
   background: #000 url("images/header.JPG") center center;
   width: 100%;
   height: 100%;
-  background-size: cover;
+
   overflow: hidden;
   margin-bottom: 0;
   text-align: center;
@@ -146,7 +146,7 @@ ID STYLES
 ============================================================================*/
 #about {
   color: #fff;
-  background-color: tomato;
+  background-color: #34495e;
   text-align: center;
 }
 
@@ -191,7 +191,7 @@ ID STYLES
 
 #skills {
   color: #fff;
-  background-color: #3498db;
+  background-color: #2980b9;
 }
 
 #skills li{
@@ -211,7 +211,7 @@ ID STYLES
 
 #tools {
   color: #fff;
-  background-color: #2ECC71;
+  background-color: #16a085;
 }
 
 /*============================================================================
