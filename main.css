@@ -83,7 +83,7 @@ CLASS STYLES
 .jumbotron {
   color: #fff;
   position: relative;
-  background: #000 url("images/header.JPG") center center;
+  background: #000 url("images/header.jpg") center center;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -146,7 +146,7 @@ ID STYLES
 ============================================================================*/
 #about {
   color: #fff;
-  background-color: tomato;
+  background-color: #34495e;
   text-align: center;
 }
 
@@ -211,7 +211,7 @@ ID STYLES
 
 #tools {
   color: #fff;
-  background-color: #2ECC71;
+  background-color: #16a085;
 }
 
 /*============================================================================
