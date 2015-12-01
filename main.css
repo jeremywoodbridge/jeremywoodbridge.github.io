@@ -1,3 +1,6 @@
+/* uncomment lines x through x to see areas of margins 
+that bootstrap columns are taking up */
+
 /*============================================================================
 TROUBLESHOOTING
 ============================================================================*/
@@ -91,12 +94,7 @@ CLASS STYLES
 
 .jumbotron {
   color: #fff;
-<<<<<<< HEAD
   background: #000 url("images/header.jpg") center center; 
-=======
-  position: relative;
-  background: #000 url("images/header.jpg") center center;
->>>>>>> origin/master
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -181,10 +179,7 @@ ID STYLES
 #about {
   color: #fff;
   background-color: #34495e;
-<<<<<<< HEAD
   border-bottom: solid 2px #2c3e50;
-=======
->>>>>>> origin/master
   text-align: center;
 }
 
@@ -250,10 +245,7 @@ ID STYLES
 #tools {
   color: #fff;
   background-color: #16a085;
-<<<<<<< HEAD
   border-bottom: solid 2px #27ae60;
-=======
->>>>>>> origin/master
 }
 
 /*============================================================================
