@@ -4,21 +4,65 @@
 <html>
 	<head>
 		<title> Jeremy Woodbridge | Front-End Web Developer </title>
+    <meta name="description" content="Jeremy Woodbridge, Portland OR, Front-End/UI Developer.">
+    <!-- FB CONTENT -->
+    <meta property=”og:title” content=”Jeremy Woodbridge Front-end/UI Developer”/>
+    <meta property=”og:type” content=”website”/>
+    <meta property=”og:description” content=”Jeremy Woodbridge is a Front-End Web developer whom lives in the amazing city of Portland, OR.”/>
+    <!-- <meta property=”fb:admins” content=”USER_ID”/> add later with FB API -->
+    <!-- TWITTER CONTENT -->
+    <meta name=”twitter:card” content=”summary”>
+    <meta name=”twitter:url” content=”http://kiyakou.github.com”>
+    <meta name=”twitter:title” content=”Jeremy Woodbridge. Front-End/UI Developer”>
+    <meta name=”twitter:description” content=”Jeremy Woodbridge is a Front-End Web developer whom lives in the amazing city of Portland, OR.”>
+    <!-- PAGE ORIENTED META TAGS -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- CSS Stylesheets -->
+		<!-- CSS STYLESHEETS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
-		<!-- JUMBOTRON header -->
+		<!-- NAVIGATION -->
+    <a name="top"></a>
+    <div class="page-nav row">
+      <ul class="nav navbar-default nav-justified">
+        <li><a href="#top"> 
+          <span class="glyphicon glyphicon-home"></span>
+          Home </a>
+        </li>
+        <li><a href="#about">
+          <span class="glyphicon glyphicon-info-sign"></span>
+          About </a>
+        </li>
+        <li><a href="#language">
+          <span class="glyphicon glyphicon-education"></span> 
+          Languages </a>
+        </li>
+        <li><a href="#tools">
+          <span class="glyphicon glyphicon-wrench"></span>
+         Tools </a>
+       </li>
+        <li><a href="#projects"> 
+          <span class="glyphicon glyphicon-folder-open"></span>
+          Projects </a>
+        </li>
+        <li><a href="#social">
+          <span class="glyphicon glyphicon-bullhorn"></span> 
+          Social </a>
+        </li>
+      </ul>
+    </div>
+    <!-- JUMBOTRON HEADER -->
 		<div class="head-content jumbotron">
-			<h1>(:Jeremy Woodbridge:)</h1>
+			<h1>Jeremy Woodbridge</h1>
 			<hr align="center" width="50%">
-			<h3>Front-End Web Developer</h3>	
+			<h3>Front-End Web Developer</h3>
   		</div>
   		<!-- ABOUT -->
+      <a name="about"></a>
   		<div id ="about" class="container section">
   			<h1 class="header">About Me</h1>
   			<hr align="center" width="30%">
@@ -26,22 +70,16 @@
   			<div class="col-sm-4 profile">
   				<h3>Summary</h3>
           <p id="summary">
-            I am a young and adventurous code monkey
-            <br> 
-            making my way to the rank of code wizard.
-            <br> 
-            I specialize in Front-End and UI Development
-            <br> 
-            but I'm never afraid to pick up the 
-            <br>
-            Back-End or Full-Stack developer hat.
+            My name is Jeremy Woodbridge and I live in Portland, OR.
+            I am an advid Front-End/UI Developer always looking for that 
+            next project. I love playing bass guitar and video games and 
+            meeting new people.
           </p>
   			</div>
-  			<!-- Summary -->
+  			<!-- SUMMARY -->
   			<div class="col-sm-4">
 	  			<img id="profile" src="images/profile2.jpg" alt="#">
   			</div>
-  			<!-- Profile Information -->
   			<div class="info col-sm-4">
   				<h3> Info </h3>
   				<p>
@@ -58,45 +96,42 @@
   			</div>	
   		</div>
   		<!-- SKILLS -->
+      <a name="language"></a>
   		<div id ="skills" class="container-fluid section">
   			<!-- programming languages -->
   			<div class="row">
   				<h1 class="header">Languages</h1>
   				<hr align="center" width="30%">
   				<div class="html col-sm-4">
-                <!--<img class="center-image"src="images/0480-html5.png">
-                <span> + </span>
-                <img class="center-image"src="images/0482-css3.png"> -->
-	  					<h4>HTML + CSS</h4>
-              <hr align="center" width="15%">
-	  						<ul>
-	  							<li>
+  					<h4>HTML + CSS</h4>
+            <hr align="center" width="15%">
+  						<ul>
+  							<li>
+                <span class="skill-name">
+  								Sass
+  							</span>
+  							</li>
+  							<li>
+                <span class="skill-name">
+                  SCSS
+                </span>
+                </li>
+  							<li>
                   <span class="skill-name">
-	  								Sass
-	  							</span>
-	  							</li>
-	  							<li>
-                  <span class="skill-name">
-                    SCSS
+                  LESS
                   </span>
-                  </li>
-	  							<li>
-                    <span class="skill-name">
-                    LESS
-                    </span>
-                  </li>
-	  							<li>
-                    <span class="skill-name">
-                    Bootstrap
-                    </span>
-                  </li>
-	  							<li> 
-                    <span class="skill-name">
-                    Foundation
-                    </span>
-                  </li>
-	  						</ul>	
-	  					</li>
+                </li>
+  							<li>
+                  <span class="skill-name">
+                  Bootstrap
+                  </span>
+                </li>
+  							<li> 
+                  <span class="skill-name">
+                  Foundation
+                  </span>
+                </li>
+  						</ul>	
   				</div>
   				<div class="javascript col-sm-4">
            <!-- <img class="center-image" id="javascript" src="images/javascript.png"> -->
@@ -154,11 +189,12 @@
   				</div>		
   			</div>
   		</div>
+      <a name="tools"></a>
   		<div id="tools" class="container-fluid section">
   			<div class="row">
   				<h1 class="header">Tools + Software</h1>
   				<hr align="center" width="30%">
-  				<ul class="col-sm-6">
+  				<ul class="tool-list col-sm-6">
             <li>
   					<span class="skill-name">
                     Sublime Text
@@ -190,7 +226,7 @@
                   </span>
             </li>  
   				</ul>
-          <ul class="col-sm-6">
+          <ul class="tool-list col-sm-6">
             <li>
             <span class="skill-name">
                     Windows 7
@@ -225,23 +261,27 @@
   			</div>	
   		</div>
   		<!-- Projects -->
+      <a name="projects"></a>
   		<div id="project" class="container-fluid section">
   			<div class="row">
           <h1 class="header">Projects</h1>
           <a href="http://codepen.io/Kiyakou/full/XbozrY/">
     				<div id="prefix" class="col-sm-6">
+              <p id="sass-desc"> A SCSS sheet full of mix-ins eliminating pesky prefixes for -moz, -webkit, -ms, and -o </p>
     				</div>
           </a>
           <a href="http://codepen.io/Kiyakou/full/qOWQJq/">  
     				<div id="landing" class="col-sm-6">
+              <p id="intro-desc"> Simple page landing animation with the use of bootstrap and type.js </p> 
     				</div>
           </a>  	
   			</div>	
   		</div>	
 		<!-- External links ex.GitHub, CodePen, LinkedIn -->
+    <a name="social"></a>
 		<div class="container-fluid social">
 			<h1 class="social_text"> Find me here </h1>
-			<p id="social_pointer">V</p>
+			<span id="social-pointer" class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
 			<div ="row list-inline text-center">
 				<ul class="list-inline text-center">
 					<li class="col-sm-4">
@@ -250,8 +290,7 @@
 							<img class="logo" src="images/git.png" alt="github logo">
 						</a>
 						<p class="text-center">	Come fork my repositories and give me a follow,
-							I am always looking to come through others code 
-							and help my fellow community of programmers<p>
+							I am always looking to contribute to other repositories<p>
 					</li>
 					<li class="col-sm-4">
 						<h2 class="oswald">CodePen</h2>
@@ -270,11 +309,24 @@
 						</a>	
 						<p class="text-center">	Here you can check my work history,
 							Want to bring me along on your projects?
-							Give me a message to check my current 
+							Send me a message to check my current 
 							availablility.</p>
 					</li>
 				</ul>		
 			</div>	
 		</div>
+    <div class="container footer">
+      <div class="row">
+        <ul class="list-inline">
+          <li class="col-sm-4"> Jeremy Web Development, Portland, OR;</li>
+          <li class="col-sm-4"> <!--empty space --> </li>
+          <li class="col-sm-4">
+            <a href="mailto:jeremy.woodbridge.official@gmail.com">
+            <span class="glyphicon glyphicon-envelope"></span>
+            Email Me
+          </a>
+          </li>
+        </ul>  
+    </div>  
 	</body>
 </html>

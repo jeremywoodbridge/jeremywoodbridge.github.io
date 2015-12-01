@@ -15,6 +15,7 @@ ELEMENT STYLES
 html,
 body {
   height: 100%;
+  width: 100%;
   font-family: 'Oswald', sans-serif;
   margin: 0;
   margin-top: 0;
@@ -38,6 +39,10 @@ p {
     -webkit-margin-end: 0px;
 }
 
+p, li {
+  font-family: 'Open Sans', sans-serif;
+}
+
 ul {
   list-style-type: none;
 }
@@ -46,10 +51,6 @@ li {
   padding-right: 20px; 
 }
 
-footer {
-	bottom: 0px;-*
-	margin-bottom: 0px;
-}
 /*============================================================================
 CLASS STYLES
 ============================================================================*/
@@ -62,6 +63,17 @@ CLASS STYLES
 
 .container .credit {
   margin: 20px 0;
+}
+
+.footer{
+  color: #95a5a6;
+  background-color: #ecf0f1;
+  border-top: solid 2px gray;
+  height: 5em;
+}
+
+.footer li {
+  margin-top: 25px;
 }
 
 .logo {
@@ -82,23 +94,31 @@ CLASS STYLES
 
 .jumbotron {
   color: #fff;
-  position: relative;
-  background: #000 url("images/header.jpg") center center;
+  background: #000 url("images/header.jpg") center center; 
   width: 100%;
   height: 100%;
-
   overflow: hidden;
   margin-bottom: 0;
   text-align: center;
 }
 
 .jumbotron h3, .jumbotron h1 {
-  opacity: 0.5;
+  opacity: 0.72;
 }
 
 .list-inline:hover {
   text-align: center;
   text-decoration: none;
+}
+
+.nav {
+  background-color: #fff;
+  z-index: 1;
+}
+
+.nav li {
+  color: #fff;
+  margin-top: 50%;
 }
 
 .navlink {
@@ -113,6 +133,14 @@ CLASS STYLES
   margin-top: 50px;
 }
 
+.page-nav {
+  border-bottom: 4px solid gray;
+}
+
+.page-nav ul li span {
+  padding-right: 25px;
+}
+
 .project {
   background-color: #34495e;
   margin-top: auto 0;
@@ -125,11 +153,11 @@ CLASS STYLES
 }
 
 .section {
-  height: 27em;
+  height: 30em;
 }
 
 .social {
-  margin-bottom: 10em;
+  margin-bottom: 15%;
   margin-top: 10em;
 }
 
@@ -141,12 +169,17 @@ CLASS STYLES
   margin-left: 20%;
   margin-right: 20%;
 }
+
+.tool-list {
+  margin-top: 5%;
+}
 /*============================================================================
 ID STYLES
 ============================================================================*/
 #about {
   color: #fff;
   background-color: #34495e;
+  border-bottom: solid 2px #2c3e50;
   text-align: center;
 }
 
@@ -198,8 +231,8 @@ ID STYLES
  margin-right: 4%;
 }
 
-#social_pointer {
-  text-align: center;
+#social-pointer {
+  margin: 5% 50% 2% 49%;
   font-size: 2em;
   padding: 0 auto;
 }
@@ -212,6 +245,7 @@ ID STYLES
 #tools {
   color: #fff;
   background-color: #16a085;
+  border-bottom: solid 2px #27ae60;
 }
 
 /*============================================================================
@@ -223,11 +257,54 @@ ANIMATION
   background-color: ease #000;
 }
 
-#social_pointer:hover{
+#social-pointer:hover{
   color: gray;
   padding: 0 auto;
 }
 
+#sass-desc{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  margin-top: 65%;
+  padding-top: 7%;
+  margin-bottom: 0;
+  max-height: 0%;
+  text-align: center;
+  visibility: hidden;
+}
+
+#prefix:hover #sass-desc{
+  visibility: visible;
+  background-color: #000;
+  max-height: 100%;
+  opacity: 0.8;  
+}
+
+#intro-desc{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  margin-top: 65%;
+  padding-top: 7%;
+  margin-bottom: 0;
+  max-height: 0%;
+  text-align: center;
+  visibility: hidden;
+}
+
+#landing:hover #intro-desc{
+  visibility: visible;
+  background-color: #000;
+  max-height: 100%;
+  opacity: 0.8;  
+}
 /*============================================================================
 MEDIA QUERIES
 ============================================================================*/
@@ -235,7 +312,7 @@ MEDIA QUERIES
     /* For mobile phones: */
     /* These elements are sorted from top to bottom of the page*/
     #about {
-      height: 45em;
+      height: 52em;
     }
     .info {
       margin-top: 20px;
@@ -249,7 +326,7 @@ MEDIA QUERIES
     }
     /*tools styles for phones*/
     #tools {
-      height: 25em;
+      height: 52em;
     }
     #tools li{
       margin-right: 2%;
@@ -257,6 +334,9 @@ MEDIA QUERIES
     /*social styles for phones*/
     .social {
       margin-top: 45em;
+    }
+    .page-nav{
+      display: none;
     }
 }
 
