@@ -74,11 +74,11 @@ CLASS STYLES
 }
 
 .logo {
-	padding: 10px;
+  padding: 10px;
 }
 
 .findme {
-	margin-top: 5em; 
+  margin-top: 5em; 
 }
 
 .head-content {
@@ -347,4 +347,3 @@ MEDIA QUERIES
       display: none;
     }
 }
-
