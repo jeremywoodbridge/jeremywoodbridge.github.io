@@ -65,11 +65,15 @@ CLASS STYLES
   margin: 20px 0;
 }
 
+.email {
+  font-size: 2em;
+}
+
 .footer{
   color: #95a5a6;
   background-color: #ecf0f1;
   border-top: solid 2px gray;
-  height: 5em;
+  height: 6em;
 }
 
 .footer li {
@@ -269,18 +273,18 @@ ANIMATION
   left: 0;
   right: 0;
   opacity: 0;
-  margin-top: 65%;
   padding-top: 7%;
   margin-bottom: 0;
   max-height: 0%;
   text-align: center;
   visibility: hidden;
 }
-
+  
 #prefix:hover #sass-desc{
   visibility: visible;
   background-color: #000;
   max-height: 100%;
+  margin-top: 8%;
   opacity: 0.8;  
 }
 
@@ -291,7 +295,6 @@ ANIMATION
   left: 0;
   right: 0;
   opacity: 0;
-  margin-top: 65%;
   padding-top: 7%;
   margin-bottom: 0;
   max-height: 0%;
@@ -303,6 +306,7 @@ ANIMATION
   visibility: visible;
   background-color: #000;
   max-height: 100%;
+  margin-top: 8%;
   opacity: 0.8;  
 }
 /*============================================================================
